@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <style>
+        body {
+            color: #d3d3d3;
+            font: 12pt arial;
+            background-color: #222222;
+        }
+
+        .nodes circle {
+          stroke: #fff;
+          stroke-width: 1.5px;
+        }
+
+        text {
+            font-family: sans-serif;
+            font-size: 10px;
+            font-weight: bold;
+            fill: #fff;
+        }
+
+    </style>
+</head>
+<body>
+<input type="text" name="enter" size="250"
+       value="" id="directoryPath"/>
+<input type="button" value="click" id="submit"/>
+<br/>
+<svg width="960" height="600"></svg>
+
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="http://d3js.org/d3-selection-multi.v1.js"></script>
+<script src="cf.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        draw("my_data.json");
+        var dir = $('#directoryPath');
+        var submit = $('#submit');
+        submit.click(function() {
+            draw("/data?file=" + encodeURI(dir.val()));
+        });
+    });
+
+</script>
+</body>
+</html>
