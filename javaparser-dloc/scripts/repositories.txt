@@ -1,7 +1,5 @@
 com.fasterxml.jackson.core:jackson-core:2.9.5
 com.h2database:h2:1.4.195
-commons-httpclient:commons-httpclient:3.1
-javax.enterprise:cdi-api:2.0
 joda-time:joda-time:2.9.9
 junit:junit:4.12
 mysql:mysql-connector-java:6.0.6
