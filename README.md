@@ -16,7 +16,7 @@ mvn install -DskipTests
 
 # How do I use it?
 
-## Create list of maven repositories
+## 1. Create list of maven repositories
 There is a file called `repositories.txt` in `javaparser-dloc/scripts`. You should change this file to contain whatever repo names from the [Maven Repository](https://mvnrepository.com/) that you'd like to process into datapoints.  The format is one repo per line,  each line reading `<org name>:<repo name>:<version number>`.  At the moment, `repositories.txt` contains the names of the 18 Maven repos used in the Deep Learning On Code With A Graph Vocabulary.
 
 Once you've edited `repositories.txt`, run the `createDatasets.sh` script as follows:
@@ -26,7 +26,7 @@ export dataset=<path to where you'd like the dataset to go>
 cat repositories.txt | xargs -I{} <root directory of this repo>/javaparser-dloc/scripts/createDatasets.sh {} $dataset
 ```
 
-## Process all files in all repositories
+## 2. Process all files in all repositories
 Now that you've downloaded and built the repos, process them all into graphml-formatted files:
 ```
 ls $dataset | xargs -I{} <root directory of this repo>/javaparser-dloc/scripts/processDataset.sh {} $dataset
