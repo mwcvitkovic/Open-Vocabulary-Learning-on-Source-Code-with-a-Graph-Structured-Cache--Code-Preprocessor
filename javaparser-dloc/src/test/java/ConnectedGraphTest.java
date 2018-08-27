@@ -1,3 +1,4 @@
+// Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 import com.amazon.javaparser.dloc.converter.GraphManager;
 import com.amazon.javaparser.dloc.preprocessor.TypePreProcessor;
 import com.amazon.javaparser.dloc.processor.SourceProcessor;

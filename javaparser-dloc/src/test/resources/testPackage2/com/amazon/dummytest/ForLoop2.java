@@ -1,3 +1,4 @@
+// Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 package com.amazon.dummytest;
 
 public class ForLoop2 {
