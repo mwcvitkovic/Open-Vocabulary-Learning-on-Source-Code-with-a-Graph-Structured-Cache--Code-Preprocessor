@@ -33,4 +33,4 @@ ls $dataset | xargs -I{} <root directory of this repo>/javaparser-dloc/scripts/p
 ```
 
 # Questions?
-Feel free to get in touch with [Milan Cvitkovic](mwcvitkovic@gmail.com) or any of the other paper authors.  We'd love to hear from you!
+Feel free to get in touch with [Milan Cvitkovic](mailto:mwcvitkovic@gmail.com) or any of the other paper authors.  We'd love to hear from you!
