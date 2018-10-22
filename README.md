@@ -1,5 +1,5 @@
 # What is this?
-This library turns java source code (.java files) into Augmented ASTs (.gml ([graphml](http://graphml.graphdrawing.org/)) files) as per the paper [Open Vocabulary Learning on Source Code with a Graph-Structured Cache](http://tensorlab.cms.caltech.edu/users/anima/pubs/Deep_Learning_On_Code_with_an_Unbounded_Vocabulary.pdf).
+This library turns java source code (.java files) into Augmented ASTs (.gml ([graphml](http://graphml.graphdrawing.org/)) files) as per the paper [Open Vocabulary Learning on Source Code with a Graph-Structured Cache](http://arxiv.org/abs/1810.08305).
 
 More specifically, you list the names of any java repos from the [Maven Repository](https://mvnrepository.com/) that you'd like to convert into a dataset, and then this library will automatically download those repos and generate Augmented ASTs of all their constituent files, one .gml file per .java file.
 
